@@ -1,0 +1,191 @@
+<html>
+
+<head>
+<title>Html Form</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+*{
+margin:0;
+padding:0;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.Mform{
+width:390px;
+
+border-radius:5px;
+padding-top:13px;
+padding-bottom:32px;
+margin:50 auto;
+background:#9DD605;
+}
+
+.sub{
+padding:8px;
+border:2px solid white;
+border-radius:4px;
+width:320px;
+margin-top:2px;
+margin-bottom:2px;
+margin:0 auto;
+background:#C0F048;
+
+}
+
+h4{
+margin-top:6px;
+margin-bottom:6px;
+margin-left:26px;
+}
+h6{
+margin:2px 0 9px 0;
+}
+
+.btn{
+margin-left:148px;
+margin-top:12px;
+
+}
+
+i{
+margin:0 1px 0 4px;
+}
+
+input{
+margin:0 10px 0 0;
+}
+
+#name{
+margin-left:50px;
+padding:3px 7px
+}
+
+#email{
+margin-left:50px;
+padding:3px 7px
+}
+
+#contact{
+margin-left:50px;
+padding:3px 7px
+}
+
+#address{
+margin-left:39px;
+}
+
+#postcode{
+margin-left:30px;
+padding:3px 7px;
+}
+
+#country{
+margin-left:40px;
+padding:3px 7px;
+}
+
+#cnum{
+margin-left:10px;
+padding:3px 7px;
+}
+
+#seccode{
+margin-left:8px;
+padding:3px 7px;
+}
+
+#nameoncard{
+margin-left:7px;
+padding:3px 7px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="Mform">
+<h4>Step 1: Your details</h4>
+
+<div class="sub" style="margin-bottom:2px">
+<label for="name">Name</label>
+<input type="text" id="name" name="username"  placeholder="First and last name"required >
+</div>
+
+<div class="sub"style="margin-bottom:2px">
+<label for="email">Email</label>
+<input type="email" id="email" name="useremail" placeholder="example@domain.com" required >
+</div>
+
+<div class="sub" style="margin-bottom:2px">
+<label for="contact">Phone</label>
+<input type="number" id="contact" name="usercontact" placeholder="Eg. +447500000000" required >
+</div>
+
+<h4>Step 2: Delivery address</h4>
+
+<div class="sub" style="margin-bottom:2px">
+<label for="address" >Address</label>
+<textarea id="address" name="address"  rows="5" cols="22" required ></textarea>
+</div>
+
+<div class="sub" style="margin-bottom:2px">
+<label for="postcode">Post code</label>
+<input type="number" id="postcode" name="userpostcode" required >
+</div>
+
+<div class="sub" style="margin-bottom:2px">
+<label for="country">Country</label>
+<input type="text" id="country" name="usercountry" required >
+</div>
+
+<h4>Step 3: Card details</h4>
+
+
+
+<div class="sub" style="margin-bottom:2px">
+
+<h6>Card type</h6>
+
+<input type="radio" name="cardtype" value="Visa" id="card"><i class="fa-brands fa-cc-visa"></i>VISA
+
+<input type="radio" name="cardtype" value="Amex" id="card"><i class="fa-brands fa-cc-amex"></i>AmEx
+
+<input type="radio" name="cardtype" value="Mastercard" id="card"><i class="fa-brands fa-cc-mastercard"></i>Mastercard
+</div>
+
+<div class="sub" style="margin-bottom:2px">
+<label for="cnum">Card number</label>
+<input type="number" id="cnum" name="usercardnumber" required>
+</div>
+
+<div class="sub" style="margin-bottom:2px">
+<label for="seccode">Security code</label>
+<input type="number" id="seccode" name="useccode">
+</div>
+
+<div class="sub" style="margin-bottom:2px">
+<label for="nameoncard">Name on card</label>
+<input type="text" id="nameoncard" name="nameoncard" placeholder="Exact name as on the card">
+</div>
+
+<div class="btn">
+<a href="" style="text-decoration:none; border-radius:12px; padding:4px 15px; background:#434C2B; color:white;" >BUY IT!</a>
+</div>
+
+</div>
+</body>
+
+</html>
